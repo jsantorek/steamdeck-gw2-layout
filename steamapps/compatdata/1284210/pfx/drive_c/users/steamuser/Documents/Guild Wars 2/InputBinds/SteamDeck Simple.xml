@@ -1,0 +1,42 @@
+<InputBindings>
+    <action name="Walk" id="8" device="Keyboard" button="12"/>
+    <action name="Toggle Action Camera" id="78" device="Keyboard" button="6"/>
+    <action name="Mail Dialog" id="71" device="Keyboard" button="10"/>
+    <action name="PvP Panel" id="73" device="Keyboard" button="13"/>
+    <action name="Stow/Draw Weapons" id="68" device="Keyboard" button="17" mod="2"/>
+    <action name="Raptor Mount/Dismount" id="155" device="Keyboard" button="49" mod="2"/>
+    <action name="Springer Mount/Dismount" id="156" device="Keyboard" button="50" mod="2"/>
+    <action name="Skimmer Mount/Dismount" id="157" device="Keyboard" button="51" mod="2"/>
+    <action name="Jackal Mount/Dismount" id="158" device="Keyboard" button="52" mod="2"/>
+    <action name="Griffon Mount/Dismount" id="159" device="Keyboard" button="53" mod="2"/>
+    <action name="Roller Beetle Mount/Dismount" id="161" device="Keyboard" button="54" mod="2"/>
+    <action name="Warclaw Mount/Dismount" id="169" device="Keyboard" button="55" mod="2"/>
+    <action name="Skyscale Mount/Dismount" id="170" device="Keyboard" button="56" mod="2"/>
+    <action name="Siege Turtle Mount/Dismount" id="203" device="Keyboard" button="57" mod="2"/>
+    <action name="Activate Chair" id="163" device="Keyboard" button="4" mod="2"/>
+    <action name="Activate Musical Instrument" id="164" device="Keyboard" button="13" mod="2"/>
+    <action name="Activate Held Item" id="165" device="Keyboard" button="10" mod="2"/>
+    <action name="Activate Toy" id="166" device="Keyboard" button="80" mod="2"/>
+    <action name="Activate Tonic" id="167" device="Keyboard" button="79" mod="2"/>
+    <action name="Build Template 1" id="171" device="Keyboard" button="96" mod="2"/>
+    <action name="Build Template 2" id="172" device="Keyboard" button="97" mod="2"/>
+    <action name="Build Template 3" id="173" device="Keyboard" button="98" mod="2"/>
+    <action name="Build Template 4" id="174" device="Keyboard" button="99" mod="2"/>
+    <action name="Build Template 5" id="175" device="Keyboard" button="100" mod="2"/>
+    <action name="Build Template 6" id="176" device="Keyboard" button="101" mod="2"/>
+    <action name="Build Template 7" id="177" device="Keyboard" button="102" mod="2"/>
+    <action name="Build Template 8" id="178" device="Keyboard" button="103" mod="2"/>
+    <action name="Equipment Template 1" id="182" device="Keyboard" button="96" mod="4"/>
+    <action name="Equipment Template 2" id="183" device="Keyboard" button="97" mod="4"/>
+    <action name="Equipment Template 3" id="184" device="Keyboard" button="98" mod="4"/>
+    <action name="Equipment Template 4" id="185" device="Keyboard" button="99" mod="4"/>
+    <action name="Equipment Template 5" id="186" device="Keyboard" button="100" mod="4"/>
+    <action name="Equipment Template 6" id="187" device="Keyboard" button="101" mod="4"/>
+    <action name="Equipment Template 7" id="188" device="Keyboard" button="102" mod="4"/>
+    <action name="Equipment Template 8" id="189" device="Keyboard" button="103" mod="4"/>
+    <action name="Start Fishing" id="204" device="Keyboard" button="32" mod="2"/>
+    <action name="Summon Skiff" id="205" device="Keyboard" button="33" mod="2"/>
+    <action name="Set Jade Bot Waypoint" id="206" device="Keyboard" button="34" mod="2"/>
+    <action name="Scan for Rift" id="207" device="Keyboard" button="35" mod="2"/>
+    <action name="Skyscale Leap" id="208" device="Keyboard" button="36" mod="2"/>
+</InputBindings>
