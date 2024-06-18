@@ -11,7 +11,7 @@ Layout design principles, in priority order:
 # How to get it
 ### Initial Requirements
 There are few things you need to make sure of before heading for installation of Simple&amp;Intuitive control layout for your SteamDeck:
-1. You have Guild Wars 2 added to your Steam account
+1. You have Guild Wars 2 added to your Steam account (for an alternative, check [notes](#note-non-steam-installation))
 2. The client is already downloaded
 3. The game was successfully run at least once
 
@@ -36,6 +36,9 @@ As a pre-requisite, you need to follow all steps from [installation of icons](#o
 1. Start the game - you are free to do so back in **Gaming Mode** or stay in **Desktop Mode**.
 2. After Guild Wars 2 loads, open *Game Menu* (by pressing "Menu" [&equiv;] button on Steam Deck) and navigate to *Options*, then *Control Options* (cursor movement and clicking is done with right trackpad).
 3. In bottom right corner of the panel, there is "Export" button and "Import" selection box. Press the "Import" and from available options select "SteamDeck Simple".
+
+### Note: Non steam installation
+There is a way to make layout work with non-steam installation of the game - for example in countries where the game is not being distributed through Steam. This will require substitution of appid: `1284210`, with whatever name you've given the game locally. Assuming the name is "Guild Wars 2", layout address becomes `steam://controllerconfig/Guild%20Wars%202/3139116388/` and proton prefix directory becomes something random that you will need to determine. 
 
 # Overview
 Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should expect left one to move character around and right one to operate camera - which is exactly what happens.
