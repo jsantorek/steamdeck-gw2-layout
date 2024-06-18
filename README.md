@@ -20,9 +20,7 @@ It is not relevant if you are signing in with Steam or Arena Net credentials. Ha
 ### Basic Setup
 It should be possible to open Steam's controller configuration for Guild Wars 2 and search Community Layouts for "Simple&amp;Intuitive" authored by Vonsh on 14 January 2024. If search yields such entry, its enough to apply it, but this method reportedly does not always return any results, in which case do the following:
 1. Switch your Steam Deck to desktop mode: press [STEAM] button, select "Power" and "Switch to Desktop".
-2. Open internet browser, paste the following link to address bar: `steam://controllerconfig/1284210/3139116388`, and press enter. A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild Wars 2 Controler Settings - you need to apply this layout.
-
-There are some users reporting problems with Firefox browser, but Brave and Chrome seem to be working fine. You also need to make sure you access the address, and not use search engine with it as an input.
+2. Open internet browser, paste the following link to address bar: `steam://controllerconfig/1284210/3139116388/`, and press enter. A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild Wars 2 Controler Settings - you need to apply this layout.
 
 You are done now! Layout works with game's default settings out of the box - no additional settings nor downloads are necessary. I believe it should be intuitive enough to learn it on your own pretty quickly, but you are free to go to [overview](#overiview) section to read on some tips and explanations.
 
