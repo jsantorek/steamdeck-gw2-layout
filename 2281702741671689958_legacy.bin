@@ -2414,6 +2414,43 @@
 		"description"		""
 		"inputs"
 		{
+			"button_escape"
+			{
+				"activators"
+				{
+					"release"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action remove_layer 2 0 0, Unlock skills, , "
+						}
+					}
+					"release"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action remove_layer 3 0 0, , "
+						}
+					}
+					"release"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action remove_layer 4 0 0, , "
+						}
+					}
+					"release"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action remove_layer 5 0 0, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 			"button_back_left"
 			{
 				"activators"
