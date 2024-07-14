@@ -909,7 +909,25 @@
 					{
 						"bindings"
 						{
+							"binding"		"key_press RETURN, Enter > Open chat, , "
+						}
+					}
+					"Long_Press"
+					{
+						"bindings"
+						{
 							"binding"		"key_press RETURN, , "
+						}
+					}
+					"Long_Press"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action SHOW_KEYBOARD, , "
+						}
+						"settings"
+						{
+							"delay_start"		"150"
 						}
 					}
 				}
@@ -925,7 +943,7 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press BACKSPACE, , "
+							"binding"		"key_press BACKSPACE, Backspace, , "
 						}
 					}
 				}
