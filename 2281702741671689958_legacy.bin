@@ -1,9 +1,9 @@
 "controller_mappings"
 {
 	"version"		"3"
-	"revision"		"590"
-	"title"		"Simple&Intuitive"
-	"description"		"No additional setup needed, works with default settings. All advanced features and custom icons available optionally. For help, search for reddit thread."
+	"revision"		"591"
+	"title"		"[GW2] Simple&Intuitive"
+	"description"		"#SettingsController_AutosaveDescription"
 	"creator"		"76561198064514229"
 	"progenitor"		""
 	"url"		"usercloud://1284210/controller_neptune"
@@ -12,7 +12,7 @@
 	"controller_caps"		"23117823"
 	"major_revision"		"0"
 	"minor_revision"		"0"
-	"Timestamp"		"-839157248"
+	"Timestamp"		"-832340144"
 	"actions"
 	{
 		"Default"
@@ -999,6 +999,8 @@
 		"description"		""
 		"inputs"
 		{
+			"edge"
+			{
 				"activators"
 				{
 					"Full_Press"
@@ -1031,6 +1033,27 @@
 		"description"		""
 		"inputs"
 		{
+			"edge"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_CONTROL, Change autoattack, , "
+							"binding"		"mouse_button RIGHT, Change autoattack, , "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 		}
 		"settings"
 		{
@@ -1940,7 +1963,21 @@
 		"description"		""
 		"inputs"
 		{
-			"touch"
+		}
+		"settings"
+		{
+			"layer"		"1"
+		}
+	}
+	"group"
+	{
+		"id"		"63"
+		"mode"		"radial_menu"
+		"name"		"Commander Markers"
+		"description"		""
+		"inputs"
+		{
+			"touch_menu_button_0"
 			{
 				"activators"
 				{
@@ -1948,8 +1985,180 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press LEFT_CONTROL, Change autoattack, , "
-							"binding"		"mouse_button RIGHT, Change autoattack, , "
+							"binding"		"key_press LEFT_ALT, Clear all, special_blank.png, "
+							"binding"		"key_press 9, Clear all, special_blank.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_1"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Arrow, @Commander_1_arrow_marker.png, "
+							"binding"		"key_press 1, Arrow, @Commander_1_arrow_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_2"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Circle, @Commander_2_circle_marker.png, "
+							"binding"		"key_press 2, Circle, @Commander_2_circle_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_3"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Heart, @Commander_3_heart_marker.png, "
+							"binding"		"key_press 3, Heart, @Commander_3_heart_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_4"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Square, @Commander_4_square_marker.png, "
+							"binding"		"key_press 4, Square, @Commander_4_square_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_5"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Star, @Commander_5_star_marker.png, "
+							"binding"		"key_press 5, Star, @Commander_5_star_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_6"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Spiral, @Commander_6_spiral_marker.png, "
+							"binding"		"key_press 6, Spiral, @Commander_6_spiral_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_7"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, Triangle, @Commander_7_triangle_marker.png, "
+							"binding"		"key_press 7, Triangle, @Commander_7_triangle_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_8"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_ALT, X, @Commander_8_x_marker.png, "
+							"binding"		"key_press 8, X, @Commander_8_x_marker.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
 						}
 					}
 				}
@@ -1960,7 +2169,17 @@
 		}
 		"settings"
 		{
-			"layer"		"1"
+			"touch_menu_show_labels"		"0"
+		}
+	}
+	"group"
+	{
+		"id"		"65"
+		"mode"		"reference"
+		"description"		""
+		"settings"
+		{
+			"referenced_mode"		"63"
 		}
 	}
 	"group"
@@ -1994,23 +2213,7 @@
 				{
 				}
 			}
-			"button_menu"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action hold_layer 6 0 1, , "
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"left_bumper"
+						"left_bumper"
 			{
 				"activators"
 				{
@@ -2042,6 +2245,22 @@
 						"bindings"
 						{
 							"binding"		"key_press C, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"button_menu"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action hold_layer 6 0 1, , "
 						}
 					}
 				}
@@ -2374,6 +2593,231 @@
 				{
 				}
 			}
+			"left_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press RETURN, Concede defeat, , "
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press FORWARD_SLASH, , "
+						}
+						"settings"
+						{
+							"delay_start"		"25"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press R, , "
+						}
+						"settings"
+						{
+							"delay_start"		"50"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press E, , "
+						}
+						"settings"
+						{
+							"delay_start"		"75"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press S, , "
+						}
+						"settings"
+						{
+							"delay_start"		"100"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press I, , "
+						}
+						"settings"
+						{
+							"delay_start"		"125"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press G, , "
+						}
+						"settings"
+						{
+							"delay_start"		"150"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press N, , "
+						}
+						"settings"
+						{
+							"delay_start"		"175"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press RETURN, , "
+						}
+						"settings"
+						{
+							"delay_start"		"200"
+							"interruptable"		"0"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"right_bumper"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press RETURN, Open Wiki, , "
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press FORWARD_SLASH, , "
+						}
+						"settings"
+						{
+							"delay_start"		"25"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press W, , "
+						}
+						"settings"
+						{
+							"delay_start"		"50"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press I, , "
+						}
+						"settings"
+						{
+							"delay_start"		"75"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press K, , "
+						}
+						"settings"
+						{
+							"delay_start"		"100"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press I, , "
+						}
+						"settings"
+						{
+							"delay_start"		"125"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press SPACE, , "
+						}
+						"settings"
+						{
+							"delay_start"		"150"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_SHIFT, , "
+							"binding"		"mouse_button LEFT, , "
+						}
+						"settings"
+						{
+							"delay_start"		"175"
+							"interruptable"		"0"
+						}
+					}
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press RETURN, , "
+						}
+						"settings"
+						{
+							"delay_start"		"200"
+							"interruptable"		"0"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 			"button_back_left"
 			{
 				"activators"
@@ -2487,6 +2931,7 @@
 			"39"		"joystick inactive"
 			"43"		"joystick inactive"
 			"41"		"joystick inactive"
+			"63"		"joystick inactive"
 			"4"		"left_trigger active"
 			"5"		"right_trigger active"
 			"9"		"right_joystick active"
@@ -2561,7 +3006,8 @@
 			"60"		"right_trackpad active"
 			"29"		"left_trigger active"
 			"30"		"right_trigger active"
-			"61"		"right_joystick active"
+			"61"		"right_joystick inactive"
+			"65"		"right_joystick active"
 		}
 	}
 	"settings"
