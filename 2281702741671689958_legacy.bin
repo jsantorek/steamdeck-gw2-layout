@@ -959,8 +959,8 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press LEFT_SHIFT, Link to Chat, , "
-							"binding"		"mouse_button LEFT, Link to Chat, , "
+							"binding"		"key_press LEFT_SHIFT, Create chat link, , "
+							"binding"		"mouse_button LEFT, , , "
 						}
 					}
 				}
@@ -976,8 +976,8 @@
 					{
 						"bindings"
 						{
-							"binding"		"key_press LEFT_CONTROL, Link to Chat, , "
-							"binding"		"mouse_button LEFT, Link to Chat, , "
+							"binding"		"key_press LEFT_CONTROL, Send chat link, , "
+							"binding"		"mouse_button LEFT, , , "
 						}
 					}
 				}
@@ -999,6 +999,24 @@
 		"description"		""
 		"inputs"
 		{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_SHIFT, , "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
 		}
 		"settings"
 		{
