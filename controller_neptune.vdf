@@ -1,18 +1,18 @@
 "controller_mappings"
 {
 	"version"		"3"
-	"revision"		"591"
-	"title"		"[GW2] Simple&Intuitive"
-	"description"		"#SettingsController_AutosaveDescription"
+	"revision"		"597"
+	"title"		"Simple&Intuitive"
+	"description"		"No additional setup needed, works with default settings. All advanced features and custom icons available optionally. For help, search for reddit thread."
 	"creator"		"76561198064514229"
 	"progenitor"		""
 	"url"		"usercloud://1284210/controller_neptune"
-	"export_type"		"personal_cloud"
+	"export_type"		"community"
 	"controller_type"		"controller_neptune"
 	"controller_caps"		"23117823"
 	"major_revision"		"0"
 	"minor_revision"		"0"
-	"Timestamp"		"-832340144"
+	"Timestamp"		"-597004128"
 	"actions"
 	{
 		"Default"
@@ -960,7 +960,7 @@
 						"bindings"
 						{
 							"binding"		"key_press LEFT_SHIFT, Create chat link, , "
-							"binding"		"mouse_button LEFT, , , "
+							"binding"		"mouse_button LEFT, , "
 						}
 					}
 				}
@@ -977,7 +977,7 @@
 						"bindings"
 						{
 							"binding"		"key_press LEFT_CONTROL, Send chat link, , "
-							"binding"		"mouse_button LEFT, , , "
+							"binding"		"mouse_button LEFT, , "
 						}
 					}
 				}
@@ -1533,6 +1533,27 @@
 						{
 							"binding"		"key_press LEFT_CONTROL, Skyscale Leap, @mastery_Skyscale.png, "
 							"binding"		"key_press F5, Skyscale Leap, @mastery_Skyscale.png, "
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"touch_menu_button_6"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"key_press LEFT_CONTROL, , @mastery_Summon_Conjured_Doorway.png, "
+							"binding"		"key_press F6, , @mastery_Summon_Conjured_Doorway.png, "
 						}
 						"settings"
 						{
@@ -2213,7 +2234,23 @@
 				{
 				}
 			}
-						"left_bumper"
+			"button_menu"
+			{
+				"activators"
+				{
+					"Full_Press"
+					{
+						"bindings"
+						{
+							"binding"		"controller_action hold_layer 6 0 1, , "
+						}
+					}
+				}
+				"disabled_activators"
+				{
+				}
+			}
+			"left_bumper"
 			{
 				"activators"
 				{
@@ -2245,22 +2282,6 @@
 						"bindings"
 						{
 							"binding"		"key_press C, , "
-						}
-					}
-				}
-				"disabled_activators"
-				{
-				}
-			}
-			"button_menu"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"controller_action hold_layer 6 0 1, , "
 						}
 					}
 				}

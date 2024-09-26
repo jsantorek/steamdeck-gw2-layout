@@ -1,0 +1,23 @@
+name: Zip Files
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  zip-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Move files
+        run:
+          mkdir --parents "compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2"; mv -v InputBinds "$_"
+          mkdir --parents "common/Guild Wars 2"; mv -v TouchMenuIcons "$_"
+      - uses: actions/checkout@v2
+      - uses: vimtor/action-zip@v1.2
+        with:
+          files: common/ compatdata/
+          dest: optional-assets.zip
+      - uses: actions/upload-artifact@v1.1
+        with:
+          name: optional-assets
+          path: ${{ github.workspace }}/optional-assets.zip

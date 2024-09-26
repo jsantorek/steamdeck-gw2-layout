@@ -20,12 +20,12 @@ It is not relevant if you are signing in with Steam or Arena Net credentials. Ha
 ### Basic Setup
 It should be possible to open Steam's controller configuration for Guild Wars 2 and search Community Layouts for "Simple&amp;Intuitive" authored by Vonsh on 14 January 2024. If search yields such entry, its enough to apply it, but this method reportedly does not always return any results, in which case do the following:
 1. Switch your Steam Deck to desktop mode: press [STEAM] button, select "Power" and "Switch to Desktop".
-2. Open internet browser, paste the following link to address bar: `steam://controllerconfig/1284210/3139116388/`, and press enter. A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild Wars 2 Controler Settings - you need to apply this layout.
+2. Open internet browser, paste the following link to address bar: `steam://controllerconfig/1284210/3338357161/`, and press enter. A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild Wars 2 Controler Settings - you need to apply this layout.
 
 You are done now! Layout works with game's default settings out of the box - no additional settings nor downloads are necessary. I believe it should be intuitive enough to learn it on your own pretty quickly, but you are free to go to [overview](#overiview) section to read on some tips and explanations.
 
 ### Optional: Installation of Icons
-1. Download latest `.tar.gz` release [here](https://github.com/jsantorek/steamdeck-gw2-layout/archive/refs/tags/1.0.0.tar.gz). 
+1. Download `.tar.gz` asset for latest release [here](https://github.com/jsantorek/steamdeck-gw2-layout/releases/latest). 
 2. Extract the archive and manually move its contents to `/home/deck/.steam/steam/steamapps` directory. Alternatively, to automate the process,  you can right-click in directory where file was downloaded, click "Open Terminal Here" option and copy-paste the following command there `tar xf steamdeck-gw2-layout-1.0.0.tar.gz --strip=1 --directory /home/deck/.steam/steam/steamapps`.
 3. If everything was done correctly, virtual menu's displayed on screen will now be using game's UI icons.
 
@@ -39,6 +39,9 @@ As a pre-requisite, you need to follow all steps from [installation of icons](#o
 
 ### Note: Non steam installation
 There is a way to make layout work with non-steam installation of the game - for example in countries where the game is not being distributed through Steam. This will require substitution of appid: `1284210`, with whatever name you've given the game locally. Assuming the name is "Guild Wars 2", layout address becomes `steam://controllerconfig/Guild%20Wars%202/3139116388/` and proton prefix directory becomes something random that you will need to determine. 
+
+### Note: Non english language
+For non english game language file name of directory where input bindings are saved might be different. For french its reportedly `inputsbind`, which would make the relative path to proton prefix root `/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/inputsbind/SteamDeck Simple.xml`. You can determine this by first going through process of exporting your current controls in game, and only later moving the xml to already existing directory, beside the other file.
 
 # Overview
 Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should expect left one to move character around and right one to operate camera - which is exactly what happens.
