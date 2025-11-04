@@ -27,11 +27,13 @@ You are done now! Layout works with game's default settings out of the box - no 
 ### Optional: Installation of Icons
 1. Download `.tar.gz` asset for latest release [here](https://github.com/jsantorek/steamdeck-gw2-layout/releases/latest).
 2. Extract the archive and manually move its contents.
-   * The input bindings must go in `/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds`
-   * The icons must go to `/home/deck/.steam/steam/steamapps/common/Guild Wars 2/`
-   * Alternatively, to perform this automatically, right click on the directory where the file was downlaoded, click "Open Terminal Here", and past the following command there:
+   * `InputBinds` must be moved to `/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds`
+   * `TouchMenuIcons` must be moved to `/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons`
+   * To perform this automatically, right click on the directory where the file was downlaoded, click "Open Terminal Here", and paste the following command there:
       ```bash
-      echo foo
+      tar xf steamdeck-gw2-layout-*.tar.gz --strip=1 &&
+      mv InputBinds /home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/ &&
+      mv TouchMenuIcons /home/deck/.steam/steam/steamapps/common/Guild Wars 2/
       ```
 5. If everything was done correctly, virtual menu's displayed on screen will now be using game's UI icons.
 
