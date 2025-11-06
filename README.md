@@ -32,8 +32,10 @@ You are done now! Layout works with game's default settings out of the box - no 
    * To perform this automatically, right click on the directory where the file was downlaoded, click "Open Terminal Here", and paste the following command there:
       ```bash
       tar xf steamdeck-gw2-layout-*.tar.gz --strip=1 &&
-      mv InputBinds "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/" &&
-      mv TouchMenuIcons "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/"
+      mkdir -p "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds"
+      mv InputBinds/SteamDeckSimple.xml "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds" &&
+      mkdir -p "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons"
+      mv TouchMenuIcons/* "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons"
       ```
 5. If everything was done correctly, virtual menu's displayed on screen will now be using game's UI icons.
 
