@@ -25,9 +25,19 @@ It should be possible to open Steam's controller configuration for Guild Wars 2 
 You are done now! Layout works with game's default settings out of the box - no additional settings nor downloads are necessary. I believe it should be intuitive enough to learn it on your own pretty quickly, but you are free to go to [overview](#overiview) section to read on some tips and explanations.
 
 ### Optional: Installation of Icons
-1. Download `.tar.gz` asset for latest release [here](https://github.com/jsantorek/steamdeck-gw2-layout/releases/latest). 
-2. Extract the archive and manually move its contents to `/home/deck/.steam/steam/steamapps` directory. Alternatively, to automate the process,  you can right-click in directory where file was downloaded, click "Open Terminal Here" option and copy-paste the following command there `tar xf steamdeck-gw2-layout-1.0.0.tar.gz --strip=1 --directory /home/deck/.steam/steam/steamapps`.
-3. If everything was done correctly, virtual menu's displayed on screen will now be using game's UI icons.
+1. Download `.tar.gz` asset for latest release [here](https://github.com/jsantorek/steamdeck-gw2-layout/releases/latest).
+2. Extract the archive and manually move its contents.
+   * `InputBinds` must be moved to `/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds`
+   * `TouchMenuIcons` must be moved to `/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons`
+   * To perform this automatically, right click on the directory where the file was downlaoded, click "Open Terminal Here", and paste the following command there:
+      ```bash
+      tar xf steamdeck-gw2-layout-*.tar.gz --strip=1 &&
+      mkdir -p "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds"
+      mv "InputBinds/SteamDeck Simple.xml" "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds" &&
+      mkdir -p "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons"
+      mv TouchMenuIcons/* "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons"
+      ```
+5. If everything was done correctly, virtual menu's displayed on screen will now be using game's UI icons.
 
 This whole process is basically supposed to do two things: put [SteamDeck Simple.xml](https://github.com/jsantorek/steamdeck-gw2-layout/blob/1.0.0/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild%20Wars%202/InputBinds/SteamDeck%20Simple.xml) file to Guild Wars'2 Document's subdirectory on Proton prefix filesystem (to make activation of advanced features easier) and place [TouchMenuIcons with all its contents](https://github.com/jsantorek/steamdeck-gw2-layout/tree/1.0.0/common/Guild%20Wars%202/TouchMenuIcons) in Steam game's directory (to make menus use custom icons).
 
