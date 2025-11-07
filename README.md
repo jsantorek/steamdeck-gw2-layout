@@ -33,7 +33,7 @@ You are done now! Layout works with game's default settings out of the box - no 
       ```bash
       tar xf steamdeck-gw2-layout-*.tar.gz --strip=1 &&
       mkdir -p "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds"
-      mv InputBinds/SteamDeckSimple.xml "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds" &&
+      mv "InputBinds/SteamDeck Simple.xml" "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds" &&
       mkdir -p "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons"
       mv TouchMenuIcons/* "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons"
       ```
