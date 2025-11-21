@@ -1,4 +1,3 @@
 title: "My GitHub Pages Site"
 description: "A simple starter with Jekyll includes"
 markdown: kramdown
-theme: none   # Ensures we use our own layout
