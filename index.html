@@ -1,25 +1,26 @@
+---
+title: "Simple & Intuitive"
+---
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{{ page.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
     <style>
         {% include style.css %}
     </style>
-    <script>
-        {% include script.js %}
-    </script>
 </head>
 
 <body>
     {% include header.html %}
-    <main>
-        {{ content }}
-    </main>
+    {% include main.html %}
     {% include footer.html %}
-    <script src="/assets/script.js"></script>
+    <script>
+        {% include script.js %}
+    </script>
 </body>
 
 </html>
