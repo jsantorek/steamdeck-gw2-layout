@@ -1,7 +1,26 @@
-<header class="site-header">
-    <h1>{{ site.title }}</h1>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
+<header>
+    <!-- Navigation -->
+    <nav class="noprint">
+        <ul>
+            <li>
+                <img style="height: 1.2em;"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Steam_Deck_favicon.svg">
+                <span>{{ site.title }}</span>
+            </li>
+            <li class="float-right sticky"><a onclick="toggleDarkMode(this)">☪</a></li>
+            <li><a href="#principles">Principles</a></li>
+            <li><a href="#setup">Setup</a></li>
+            <li><a href="#description">Description ▾</a>
+                <ul>
+                    <li><a href="#movement">Basic</a></li>
+                    <li><a href="#combat">Extra Style</a></li>
+                    <li><a href="#interface">Classes</a></li>
+                    <li><a href="#shortcuts">Add-Ons</a></li>
+                    <li><a href="#extensions">Add-Ons</a></li>
+                </ul>
+            </li>
+            <li class="float-right"><a href="{{ site.github.tar_url }}">Download</a></li>
+            <li class="float-right"><a href="steam://controllerconfig/1284210/3338357161/">Set Layout</a></li>
+        </ul>
     </nav>
 </header>
