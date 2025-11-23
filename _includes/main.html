@@ -34,34 +34,85 @@
     <section id="setup">
         <h1>Setup</h1>
         <p>Before you start setting up the Simple & Intuitive make sure to successfully run the game at least once. This
-            will ensure that Steam and Guild Wars 2 create relevant files and directories.</p>
+            will ensure that Steam and Guild Wars 2 create relevant files and directories. Some details of the
+            instruction also assume you are using SteamOS, but if you are proficient enough to reinstall operating
+            system, I think I can assume you can improvise stuff like extraction of compressed archive.</p>
         <p>It should be possible to open Steam's controller configuration for Guild Wars 2 and search Community Layouts
             for "Simple&Intuitive" authored by Vonsh on 14 January 2024. If search yields such entry, its enough to
             apply
-            it, but this method reportedly does not always return any results, in which case do the following:</p>
+            it directly, but this method reportedly fails sometimes and layout isn't listed. In such case do the
+            following:</p>
         <ol>
             <li>Switch your Steam Deck to desktop mode: press
-                <img src="assets/glyphs/SteamDeck/steamdeck_button_guide.png" alt="icon"
-                    style="display:inline; height:1em; vertical-align:baseline;">
-                button, select "Power" and "Switch to Desktop".
+                <img src="assets/glyphs/SteamDeck/steamdeck_button_guide.svg" alt="steam deck guide button [STEAM]"
+                    style="display:inline; height:1.5em; vertical-align:middle;">
+                select "Power" and "Switch to Desktop".
             </li>
-            <li>Open internet browser, paste the following link to address bar:
-                steam://controllerconfig/1284210/3338357161/, and press
-                enter. A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild
-                Wars 2
-                Controler Settings - you need to apply this layout.
+            <li>Open internet browser, navigate to this page and press the <code>Download</code> button.
+                A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild
+                Wars 2 Controler Settings - you need to apply the layout. If this does not
+                happen, either click <a href="{{ site.controller_layout }}">this link</a> or manually type address
+                <code>{{ site.controller_layout }}</code> into browser's address bar. In rare cases window will open in
+                background - refocusing steam should fix it.
             </li>
         </ol>
-        <p>Press the <code>Set Layout</code> button, which should open Steam window with appropriate layout ready for
-            application. Web browser might ask you if <code>xdg-open</code> should be run before hand. If this does not
-            happen, either click <a href="{{ site.controller_layout }}">this link</a> or manually type address
-            <code>{{ site.controller_layout }}</code> into browser's address bar.
-        </p>
+        <p>You are done now! Layout works with game's default settings out of the box - no additional settings nor
+            downloads are necessary. I believe it should be intuitive enough to learn on your own pretty quickly, but
+            you are free
+            to <a href="#overview">go to
+                overview section</a> to read on some tips and explanations.</p>
+        <p>There are several additional, fully optional and/or aesthetic features that are easiest to enable in desktop
+            mode. Following instruction steps assume you are already in it. If you'd like toinstall everything at once
+            using single script, it is also provided at the end.</p>
+
+        <h2>Installation of icons for virtual menus</h2>
+        <p>Layout has built-in support for in-game icons to be used virtual menus. This is purely aesthetic addition and
+            serves no other purpose than to help with visual connection of in-game GUI elements with invoked actions.
+            Without icons, virtual menus in layout still provide textual description of all operations.</p>
+        <ol>
+            <li>Open internet browser, navigate to this page and press the <code>Download</code> button. If no file is
+                downloaded, navigate to releases page and manually download latest <code>.tar.gz</code> compressed
+                assets.</li>
+            <li>Open the directory where the file was downloaded, right click on it and choose
+                <code>Extract > Extract here and delete archive</code> from
+                context menu.
+            </li>
+            <li>Two new directories should be produced, for now we are only interested in <code>TouchMenuIcons</code>
+            </li>
+            <li>Move the directory with its contents to
+                <code>/home/deck/.steam/steam/steamapps/common/Guild Wars 2</code>
+            </li>
+        </ol>
+        <h2>Activation of additional features</h2>
+        <ol>
+            <li>Unpack the compressed assets archive as described in previous section. This time we are interested
+                in <code>InputBinds</code> directory.
+            </li>
+            <li>The directory with its contents should be moved to a wine eqivalent to
+                <code>C:\Users\steamuser\Documents\Guild Wars 2"</code>. Assuming you've run the game already, you are
+                using official steam version and your client's language is English, the path should be
+                <code>/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2</code>
+            </li>
+            <li>Launch the game, and sign in - again, its irrelevant if you use Steam or ArenaNet credentials.</li>
+            <li>Open Game menu by pressing <img src="assets/glyphs/SteamDeck/steamdeck_button_options.svg"
+                    alt="steam deck options button [≡]" style="display:inline; height:1.5em; vertical-align:middle;">
+            </li>
+            <li>Navigate to <code>Options > Control Options</code> using <img
+                    src="assets/glyphs/SteamDeck/steamdeck_trackpad_r_all.svg" alt="steam deck right trackpad"
+                    style="display:inline; height:1.5em; vertical-align:middle;"> to move cursor</li>
+            <li>In bottom right corner of the panel, there is <b>Export</b> button and <b>Import</b> selection box. To
+                preserve your current settings, you can press <b>Export</b>. From available options listed inside
+                <b>Import</b>, select "SteamDeck Simple".
+            </li>
+        </ol>
+        <h2 id="install-script">Install everything with one script</h2>
+
     </section>
-    <section id="description"></section>
+    <section id="overview"></section>
     <section id="movement"></section>
     <section id="combat"></section>
     <section id="interface"></section>
     <section id="shortcuts"></section>
     <section id="extensions"></section>
 </main>
+</ol>
