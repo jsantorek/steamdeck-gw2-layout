@@ -31,7 +31,33 @@
                 alongside and space for implementation of those features needs to be reserved for future use.</p>
         </details>
     </section>
-    <section id="setup"></section>
+    <section id="setup">
+        <h1>Setup</h1>
+        <p>Before you start setting up the Simple & Intuitive make sure to successfully run the game at least once. This
+            will ensure that Steam and Guild Wars 2 create relevant files and directories.</p>
+        <p>It should be possible to open Steam's controller configuration for Guild Wars 2 and search Community Layouts
+            for "Simple&Intuitive" authored by Vonsh on 14 January 2024. If search yields such entry, its enough to
+            apply
+            it, but this method reportedly does not always return any results, in which case do the following:</p>
+        <ol>
+            <li>Switch your Steam Deck to desktop mode: press
+                <img src="{{ site.url }}/assets/glyphs/SteamDeck/SteamDeck_Steam.png" alt="icon"
+                    style="display:inline; height:1em; vertical-align:baseline;">
+                button, select "Power" and "Switch to Desktop".
+            </li>
+            <li>Open internet browser, paste the following link to address bar:
+                steam://controllerconfig/1284210/3338357161/, and press
+                enter. A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild
+                Wars 2
+                Controler Settings - you need to apply this layout.
+            </li>
+        </ol>
+        <p>Press the <code>Set Layout</code> button, which should open Steam window with appropriate layout ready for
+            application. Web browser might ask you if <code>xdg-open</code> should be run before hand. If this does not
+            happen, either click <a href="{{ site.controller_layout }}">this link</a> or manually type address
+            <code>{{ site.controller_layout }}</code> into browser's address bar.
+        </p>
+    </section>
     <section id="description"></section>
     <section id="movement"></section>
     <section id="combat"></section>
