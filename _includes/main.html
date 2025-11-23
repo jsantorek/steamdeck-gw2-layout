@@ -44,7 +44,7 @@
             following:</p>
         <ol>
             <li>Switch your Steam Deck to desktop mode: press
-                <img src="assets/glyphs/steamdeck_button_guide.svg" alt="steam deck guide button [STEAM]"
+                <img src="assets/glyphs/steamdeck_button_guide.png" alt="steam deck guide button [STEAM]"
                     style="display:inline; height:1.5em; vertical-align:middle;">
                 select "Power" and "Switch to Desktop".
             </li>
@@ -91,10 +91,10 @@
             <li>The directory with its contents should be moved to a wine eqivalent to
                 <code>C:\Users\steamuser\Documents\Guild Wars 2</code>. Assuming you've run the game already, you are
                 using official steam version and your client's language is English, the path should be
-                <code>/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2</code>
+                <pre><code>/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2</code></pre>
             </li>
             <li>Launch the game, and sign in - again, its irrelevant if you use Steam or ArenaNet credentials.</li>
-            <li>Open Game menu by pressing <img src="assets/glyphs/steamdeck_button_options.svg"
+            <li>Open Game menu by pressing <img src="assets/glyphs/steamdeck_button_options.png"
                     alt="steam deck options button [≡]" style="display:inline; height:1.5em; vertical-align:middle;">
             </li>
             <li>Navigate to <code>Options > Control Options</code> using <img
@@ -106,6 +106,16 @@
             </li>
         </ol>
         <h2 id="install-script">Install everything with one script</h2>
+        <pre><code>
+            tarball_url=$(curl -s {{ site.github.repository_url }}/releases/latest | grep tarball_url | cut -d\" -f4) &&
+            curl -# -L $tarball_url -o steamdeck-gw2-layout.tar.gz --no-progress-meter
+            tar -xf steamdeck-gw2-layout.tar.gz &&
+            rm -f steamdeck-gw2-layout.tar.gz &&
+            mkdir -p "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds"
+            mv InputBinds/* $_ &&
+            mkdir -p "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons" &&
+            mv TouchMenuIcons/* $_
+        </code></pre>
 
     </section>
     <section id="overview"></section>

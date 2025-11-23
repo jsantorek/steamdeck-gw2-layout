@@ -11,23 +11,22 @@ Table of Contents:
 /* 1. Theme Settings ––––––––––––––––––––-–––––––––––––– */
 
 
-:root, html[data-theme='light'] {
+:root, html {
 	--rem: 12pt;
 	--width: 50rem;
-	--navpos: absolute;  /* fixed | absolute */
+	--navpos: fixed;  /* fixed | absolute */
 	--font-p: 1em/1.7  'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
 	--font-h: .9em/1.5 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
 	--font-c: .9em/1.4 'DejaVu Sans Mono', monospace;
 	--border: 1px solid var(--cmed);
 	--ornament: "‹‹‹ ›››";
 	/* foreground   | background color */
-	--cfg:   #433;    --cbg:    #fff;
-	--cdark: #888;    --clight: #f5f6f7;
-	--cmed:  #d1d1d1;
-	--clink: #07c;
-	--cemph: #088;    --cemphbg: #0881;
+	--cfg:   #cecbc4; --cbg:    #252220;
+	--cdark: #999;    --clight: #333;
+	--cmed:  #566;
+	--clink: #1ad;
+	--cemph: #0b9;    --cemphbg: #0b91;
 }
-
 
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
 
