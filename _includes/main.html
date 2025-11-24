@@ -120,33 +120,34 @@ mv TouchMenuIcons/* $_</code></pre>
             Simple" input binds.</p>
     </section>
     <section id="overview">
-        <h1>Overview
-        </h1>
+        <h1>Overview</h1>
         <figure>
             <img src="assets/images/Layer0_Base.png" alt="Base layer">
-            <figcaption>Layout base. Movement related actions are tied to
+            <figcaption>
+                Layout base. Movement-related actions are tied to
                 {% include glyph.html file="steamdeck_stick_l.svg" alt="left joystick" %},
-                {% include glyph.html file="steamdeck_button_l1.svg" alt="left bumper" %} and
+                {% include glyph.html file="steamdeck_button_l1.svg" alt="left bumper" %}, and
                 {% include glyph.html file="steamdeck_button_l2.svg" alt="left trigger" %}.
                 Camera movement activates when
                 {% include glyph.html file="steamdeck_stick_r.svg" alt="right joystick" %}
-                is touched, cursor can be accessed with
+                is touched; the cursor can be controlled with
                 {% include glyph.html file="steamdeck_trackpad_r_all.svg" alt="right trackpad" %}.
-                Weapon
-                skills and swap are tied to
+                Weapon skills and weapon swap are tied to
                 {% include glyph.html file="switch_buttons.svg" alt="face buttons" %},
-                {% include glyph.html file="steamdeck_button_r1.svg" alt="right bumper" %} and
+                {% include glyph.html file="steamdeck_button_r1.svg" alt="right bumper" %}, and
                 {% include glyph.html file="steamdeck_button_r2.svg" alt="right trigger" %}.
                 {% include glyph.html file="steamdeck_trackpad_l_all.svg" alt="left trackpad" %} provides access to
                 basic dialogs, while
                 {% include glyph.html file="steamdeck_dpad_horizontal_outline.svg" alt="dpad horizontal" %} are used for
                 targeting,
-                {% include glyph.html file="steamdeck_dpad_down_outline.svg" alt="dpad down" %} for interaction and
-                {% include glyph.html file="steamdeck_dpad_up_outline.svg" alt="dpad up" %} to access map. Esc (dialog
-                closing, opening game menu) accessible through short
-                press {% include glyph.html file="steamdeck_button_options.png" alt="button options [≡]" %}, long will
-                invoke logout dialog.</figcaption>
+                {% include glyph.html file="steamdeck_dpad_down_outline.svg" alt="dpad down" %} for interaction, and
+                {% include glyph.html file="steamdeck_dpad_up_outline.svg" alt="dpad up" %} to access the map.
+                <kbd>Esc</kbd> (dialog closing, game menu) is accessible through a short press of
+                {% include glyph.html file="steamdeck_button_options.svg" alt="button options [≡]" %}; a long press
+                opens the logout dialog.
+            </figcaption>
         </figure>
+
         <figure>
             <div class="row">
                 <figure class="col">
@@ -159,32 +160,51 @@ mv TouchMenuIcons/* $_</code></pre>
             <figure class="row">
                 <img src="assets/images/HUD_Skills.png" alt="HUD skills">
             </figure>
-            <figcaption class="row"></figcaption>Slot and Profession skill layers. Holding right backpaddle focuses on
-            right side of skill bar (slot skills), Holding the left backpaddle focuses on top-left side (profession
-            skills). Pressing any one when the other is held activates special action key.</figcaption>
+            <figcaption>
+                Slot and Profession skill layers. Holding the
+                {% include glyph.html file="steamdeck_button_r4.svg" alt="back top right button" %},
+                focuses the right side of the skill bar (slot skills). Holding the
+                {% include glyph.html file="steamdeck_button_l4.svg" alt="back top left button" %},
+                focuses the top-left side (profession skills). Pressing either
+                one while the other is held activates the special action key.
+            </figcaption>
         </figure>
+
         <figure>
             <img src="assets/images/Layer3_MountsNovelties.png" alt="Mounts and Novelties layer">
-            <figcaption>Mounts and Novelties Layer. Holding right backpeddle changes trackpads into virtual menus for
-                selection of novelty (left) and mount (right). One short press will activate currently selected mount.
+            <figcaption>
+                Mounts and Novelties Layer. Holding the
+                {% include glyph.html file="steamdeck_button_r5.svg" alt="back bottom right button" %},
+                changes the trackpads into virtual menus for selecting a novelty
+                {% include glyph.html file="steamdeck_trackpad_l_all.svg" alt="left trackpad" %},
+                or mount
+                {% include glyph.html file="steamdeck_trackpad_r_all.svg" alt="right trackpad" %}.
+                A short press activates the currently selected mount.
             </figcaption>
         </figure>
+
         <figure>
             <img src="assets/images/Layer4_MasteriesTemplates.png" alt="Masteries and Templates layer">
-            <figcaption>Masteries and Templates Layer. Holding left backpeddle changes trackpads into virtual menus for
-                selection of equiement or build template (left) and selection of mastery skill (right). One short press
-                will activate currently selected mastery skill.
+            <figcaption>
+                Masteries and Templates Layer. Holding the left backpaddle changes the trackpads into virtual menus for
+                selecting an equipment or build template (left) or selecting a mastery skill (right). A short press
+                activates the currently selected mastery skill.
             </figcaption>
         </figure>
+
         <figure>
             <img src="assets/images/Layer5_Utility.png" alt="Utility layer">
-            <figcaption>Utility Layer. Holding view button enables several less used utilities. Scrolling can be done
-                with backpaddles, right trackpad can split item stacks. A becomes enter, B beomes backspace. Bumpers
-                become shortcuts to /gg and /wiki, X and Y become shortcuts to create chat link. Right joystick can be
-                uased to place commander markers.
+            <figcaption>
+                Utility Layer. Holding the view button enables several less-used utilities. Scrolling can be done with
+                the
+                backpaddles. The right trackpad can split item stacks. A becomes Enter, B becomes Backspace. Bumpers
+                become
+                shortcuts to <code>/gg</code> and <code>/wiki</code>. X and Y become shortcuts to create chat links.
+                The right joystick can be used to place commander markers.
             </figcaption>
         </figure>
     </section>
+
     <h2 id="movement">
         Movement and Camera
     </h2>
