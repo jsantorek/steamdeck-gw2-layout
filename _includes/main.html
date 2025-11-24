@@ -1,34 +1,38 @@
 <main>
     <section id="principles">
         <h1>Principles</h1>
-        <p>Design and implementation of this layout was guided by several princples - listed here in their priority
-            order.</p>
+        <p>Design and implementation of this layout were guided by a set of principles, listed here in order of
+            priority.</p>
         <details>
-            <summary>Works with game's default settings</summary>
-            <p>New player, first time downloading the client,should be able to load the layout and immediately start
-                using it. No manual configuration or options tweaking
-                neccesery, layout should be functional and game fully playable.</p>
+            <summary>Works with the game's default settings</summary>
+            <p>A new player installing the game for the first time should be able to load the layout and start playing
+                immediately. No
+                manual configuration or option adjustments are required for full functionality.</p>
         </details>
         <details>
-            <summary>Optional advanced features trivial to enable</summary>
-            <p>Every input bind that game has a control assigned by default is available. For the remaining features,
-                where manual setup is needed, a conveniance settings xml is provided to allow for immediate and complete
-                installation.</p>
+            <summary>Optional advanced features are easy to enable</summary>
+            <p>All default game bindings are supported out of the box. For features that require manual setup, a
+                preconfigured settings
+                XML is provided to allow fast and complete installation.</p>
         </details>
         <details>
-            <summary>Clean implementation without redundancies</summary>
-            <p>All files should be cleaned prior to release - no outdated, unused menus or settings, no temporary or
-                work in progress stuff. This makes it easy for user to do their own modifications and extensions.</p>
+            <summary>Clean implementation without clutter</summary>
+            <p>All files are cleaned prior to release - no outdated menus, unused settings, or temporary
+                work-in-progress
+                elements. This
+                keeps the layout easy to understand and modify for users who want to customize it further.</p>
         </details>
         <details>
-            <summary>Follows game's default HUD</summary>
-            <p>Game positions elements of its GUI on the left or right side of the screen. This is reflected by layout
-                configuration where buttons are assigned correnspondingly.</p>
+            <summary>Follows the game's default HUD</summary>
+            <p>GW2 places key UI elements on either the left or right side of the screen. The layout mirrors this
+                structure by
+                assigning inputs to corresponding sides of the controller.</p>
         </details>
         <details>
-            <summary>Space available for growth</summary>
-            <p>Game is very much alive and keeps getting new updates, expansions and features. Layout should grow
-                alongside and space for implementation of those features needs to be reserved for future use.</p>
+            <summary>Room to grow</summary>
+            <p>The game continues to receive updates, expansions, and new features. The layout is designed with future
+                growth in mind,
+                reserving space for additional functionality.</p>
         </details>
     </section>
     <section id="setup">
@@ -48,7 +52,7 @@
                     style="display:inline; height:1.5em; vertical-align:middle;">
                 select "Power" and "Switch to Desktop".
             </li>
-            <li>Open internet browser, navigate to this page and press the <code>Download</code> button.
+            <li>Open internet browser, navigate to this page and press the <code>Set Layout</code> button.
                 A pop-up should appear asking if you want to start application - agreeing will open Steam's Guild
                 Wars 2 Controler Settings - you need to apply the layout. If this does not
                 happen, either click <a href="{{ site.controller_layout }}">this link</a> or manually type address
@@ -106,16 +110,14 @@
             </li>
         </ol>
         <h2 id="install-script">Install everything with one script</h2>
-        <pre><code>
-            tarball_url=$(curl -s {{ site.github.repository_url }}/releases/latest | grep tarball_url | cut -d\" -f4) &&
-            curl -# -L $tarball_url -o steamdeck-gw2-layout.tar.gz --no-progress-meter
-            tar -xf steamdeck-gw2-layout.tar.gz &&
-            rm -f steamdeck-gw2-layout.tar.gz &&
-            mkdir -p "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds"
-            mv InputBinds/* $_ &&
-            mkdir -p "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons" &&
-            mv TouchMenuIcons/* $_
-        </code></pre>
+        <pre><code>tarball_url=$(curl -s {{ site.github.repository_url }}/releases/latest | grep tarball_url | cut -d\" -f4) &&
+curl -# -L $tarball_url -o steamdeck-gw2-layout.tar.gz --no-progress-meter
+tar -xf steamdeck-gw2-layout.tar.gz &&
+rm -f steamdeck-gw2-layout.tar.gz &&
+mkdir -p "/home/deck/.steam/steam/steamapps/compatdata/1284210/pfx/drive_c/users/steamuser/Documents/Guild Wars 2/InputBinds"
+mv InputBinds/* $_ &&
+mkdir -p "/home/deck/.steam/steam/steamapps/common/Guild Wars 2/TouchMenuIcons" &&
+mv TouchMenuIcons/* $_</code></pre>
 
     </section>
     <section id="overview"></section>

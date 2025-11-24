@@ -12,20 +12,24 @@ Table of Contents:
 
 
 :root, html {
-	--rem: 12pt;
-	--width: 50rem;
-	--navpos: fixed;  /* fixed | absolute */
-	--font-p: 1em/1.7  'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
-	--font-h: .9em/1.5 'Open Sans', 'DejaVu Sans', FreeSans, Helvetica, sans-serif;
-	--font-c: .9em/1.4 'DejaVu Sans Mono', monospace;
+	--rem: 13pt;
+	--width: 54rem;
+	--navpos: fixed;
+	--font-p: 1em/1.65  'Inter', 'Segoe UI', Helvetica, sans-serif;
+	--font-h: .95em/1.45 'Inter', 'Segoe UI', Helvetica, sans-serif;
+	--font-c: .9em/1.35 'JetBrains Mono', monospace;
 	--border: 1px solid var(--cmed);
-	--ornament: "‹‹‹ ›››";
-	/* foreground   | background color */
-	--cfg:   #cecbc4; --cbg:    #252220;
-	--cdark: #999;    --clight: #333;
-	--cmed:  #566;
-	--clink: #1ad;
-	--cemph: #0b9;    --cemphbg: #0b91;
+	--ornament: "⟡ ⟡ ⟡";
+
+	/* foreground | background color */
+	--cfg:      #d6d9e0;
+	--cbg:      #1b1f2a;
+	--cdark:    #8c92a3;
+	--clight:   #2a2f3b;
+	--cmed:     #4d6270;
+	--clink:    #5bc7ff;
+	--cemph:    #9d7dff;
+	--cemphbg:  #6b4cff;
 }
 
 /* 2. Reset –––––––––––––––––––––––––––––––––––––––––––– */
