@@ -124,22 +124,29 @@ mv TouchMenuIcons/* $_</code></pre>
         </h1>
         <figure>
             <img src="assets/images/Layer0_Base.png" alt="Base layer">
-            <figcaption>Layout base. Movement related actions are tied to left joystick, trigger and bumper. Camera
-                movement activates when right joystick is touched, cursor can be accessed with right trackpad. Weapon
-                skills and swap are tied to right bumper and face buttons. Left trackpad provides access to basic
-                dialogs, while d-pad is used for targeting, interaction and to access map.</figcaption>
+            <figcaption>Layout base. Movement related actions are tied to
+                {% include glyph.html file="steamdeck_stick_l.svg" alt="left joystick" %},
+                {% include glyph.html file="steamdeck_button_l1.svg" alt="left bumper" %} and
+                {% include glyph.html file="steamdeck_button_l2.svg" alt="left trigger" %}.
+                Camera movement activates when right joystick is touched, cursor can be accessed with
+                {% include glyph.html file="steamdeck_trackpad_r_all.svg" alt="right trackpad" %}.
+                Weapon
+                skills and swap are tied to right trigger, bumper and face buttons. Left trackpad provides access to
+                basic
+                dialogs, while d-pad is used for targeting, interaction and to access map. Esc accessible through short
+                menu press, long will invoke logout dialog.</figcaption>
         </figure>
         <figure>
             <div class="row">
                 <figure class="col">
-                    <img src="assets/images/Layer1_SlotSkills.png" alt="Slot skills layer">
+                    <img src="assets/images/Layer2_ProfessionSkills.png" alt="Profession skills layer">
                 </figure>
                 <figure class="col">
-                    <img src="assets/images/Layer2_ProfessionSkills.png" alt="Profession skills layer">
+                    <img src="assets/images/Layer1_SlotSkills.png" alt="Slot skills layer">
                 </figure>
             </div>
             <figure class="row">
-                <img src="assets/images/HUD_Skills.png.png" alt="HUD skills">
+                <img src="assets/images/HUD_Skills.png" alt="HUD skills">
             </figure>
             <figcaption class="row"></figcaption>Slot and Profession skill layers. Holding right backpaddle focuses on
             right side of skill bar (slot skills), Holding the left backpaddle focuses on top-left side (profession
@@ -159,7 +166,7 @@ mv TouchMenuIcons/* $_</code></pre>
             </figcaption>
         </figure>
         <figure>
-            <img src="assets/images/Layer0_Utility.png" alt="Utility layer">
+            <img src="assets/images/Layer5_Utility.png" alt="Utility layer">
             <figcaption>Utility Layer. Holding view button enables several less used utilities. Scrolling can be done
                 with backpaddles, right trackpad can split item stacks. A becomes enter, B beomes backspace. Bumpers
                 become shortcuts to /gg and /wiki, X and Y become shortcuts to create chat link. Right joystick can be
@@ -168,8 +175,12 @@ mv TouchMenuIcons/* $_</code></pre>
         </figure>
     </section>
     <h2 id="movement">
-        Movement
+        Movement and Camera
     </h2>
+    <p>Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should
+        expect
+        left one to move character around and right one to operate camera - which is exactly what happens. First theme
+        of the layout is <i>Movement is on the left</i></p>
     <h2 id="combat">
         Combat</h2>
     <h2 id="interface">
