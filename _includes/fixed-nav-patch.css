@@ -1,0 +1,8 @@
+/* This fixes an issue with hyperlinks to sections where fixed nav header would conceal text partially */
+[id]::before {
+    content: '';
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+}
