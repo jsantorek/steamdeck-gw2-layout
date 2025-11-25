@@ -469,5 +469,62 @@ mv TouchMenuIcons/* $_</code></pre>
         <h2>
             Tips and Tricks
         </h2>
+        <p>It takes some practice to place your thumb on top of
+            {% include glyph.html file="steamdeck_stick_r" alt="right analog" %}
+            to make it register touch for camera movement. Another good practice is to try and leave cursor near the
+            center of the screen after you are done with navigations on panels - this helps with areal effects
+            placement.
+        </p>
+        <p>
+            The last layer set by holding {% include glyph.html file="steamdeck_button_options" alt="options button" %}
+            has the most room for customization and bundles together numerous less used but still relevant functions.
+            Because of that, they aren's as neatly orgniazed and are least intuitive - they are probably the bigest part
+            of getting used to layout. The following list is meant to help you with that.
+        </p>
+        <ul>
+            <li>{% include glyph.html file="steamdeck_button_options" alt="options button" %} is a Debug Key, returning
+                layout to Default Layer. This is a fix to rare StemInput issue of incorrec cleanup of layers. If the bug
+                happns to you, you will be stuck in Profession or Slot skills layer, despite holding no chord button.
+            <li>{% include glyph.html file="steamdeck_button_a" alt="A button" %} becomes <kbd>Enter</kbd> for chat or
+                generic confirmation - eg. Play button in character selection screen.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_b" alt="B button" %} becomes <kbd>Backspace</kbd> for chat
+                or other input fields.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_r4" alt="Back top right button" %}
+                {% include glyph.html file="steamdeck_button_r5" alt="back bottom right button" %} become scroll
+                up/down.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_l4" alt="Back top left button" %}
+                {% include glyph.html file="steamdeck_button_l5" alt="back bottom left button" %} become page up/down.
+            </li>
+            <li>{% include glyph.html file="steamdeck_trackpad_r_all" alt="Right trackpad" %} stays as mouse but with
+                added <kbd>Alt</kbd>, so drag-drop can split item stacks and click on minimap creates personal markers.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_r1" alt="Right bumper" %}
+                is <code>/wiki </code> + <kbd>Ctrl</kbd> +
+                {% include glyph.html file="mouse_left_outline" alt="left mouse button click" %} + <kbd>Enter</kbd>
+                turning it into a wiki shortcut. If you mouse does not hover over anything that could produce a link, it
+                will just open home page.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_l1" alt="Left bumper" %}
+                is <code>/gg </code> + <kbd>Enter</kbd> - shortcut to concede defeat.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_x" alt="X button" %} and
+                {% include glyph.html file="steamdeck_button_y" alt="Y button" %} become chat link creation for whatever
+                is under the cursor.
+            </li>
+            <li>{% include glyph.html file="steamdeck_button_r2" alt="Right trigger" %} changes automatically activated
+                skill to whatever is under the cursor.</li>
+            <li>{% include glyph.html file="steamdeck_stick_l" alt="Right analog" %} becomes a virtual menu to place
+                commander markers - with center acting as "clear all"</li>
+            <li>{% include glyph.html file="steamdeck_button_l2" alt="Left trigger" %} becomes plan <kbd>Shift</kbd> key
+                - which allows to change placed commander marker type.</li>
+
+        </ul>
+        <p><mark>Customization</mark>: {% include glyph.html file="steamdeck_dpad_none" alt="Entire DPad" %} is free
+            for customization to your liking. One of the keys that I've assigned there at some point were
+            <kbd>Ctrl+C</kbd> and <kbd>Ctrl+V</kbd> for copy-paste in chat or password.
+        </p>
     </section>
 </main>
