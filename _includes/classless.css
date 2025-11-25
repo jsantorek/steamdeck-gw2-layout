@@ -104,7 +104,6 @@ table img { display: block; }
 
 /* figures */
 img, svg { max-width: 100%; vertical-align: text-top; object-fit: cover; }
-p>img:not(:only-child) { float: right; margin: 0 0 .5em .5em; }
 figure > img { display: inline-block; width: auto; }
 figure > img:only-of-type, figure > svg:only-of-type { max-width: 100%; display: block; margin: 0 auto .4em; }
 figure > *:not(:last-child) { margin-bottom: .4rem; }
