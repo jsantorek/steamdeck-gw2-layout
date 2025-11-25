@@ -255,9 +255,13 @@ mv TouchMenuIcons/* $_</code></pre>
             best my area of interest when looking around, but feel free to adjust that according to your preferences.
         </li>
     </ul>
-    <p>Keeping the "left side/hand is for movement" theme, dodge <kbd>V</kbd> is bound to left trigger and jump
-        <kbd>Space</kbd> is bound to left bumper.
-    </p>
+    Keeping the "left side/hand is for movement" theme, dodge <kbd>V</kbd> is bound to
+    {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %} and jump
+    <kbd>Space</kbd> is bound to {% include glyph.html file="steamdeck_button_l1" alt="left bumper" %}.
+    To improve mount usability, Mount Skill 2 <kbd>C</kbd> can be called with
+    {% include glyph.html file="steamdeck_button_r1" alt="right bumper" %}. ou will be moving
+    and looking with analogs while mount skills will all be available through bumpers (jump, fly up, skill 2)
+    and triggers (engage skill, skill 1).
     <ul>
         <li>[Customization option]: In past I have been experimenting with
             {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %}
@@ -275,10 +279,9 @@ mv TouchMenuIcons/* $_</code></pre>
     <h2 id="combat">
         Combat</h2>
     The other theme is "right side is for skills", thus all weapon skills, slot skills and profession skills are
-    accessible
-    with: right bumper,
-    {% include glyph.html file="steamdeck_button_r1" alt="left bumper" %},
-    {% include glyph.html file="steamdeck_button_r2" alt="left trigger" %} and
+    accessible with:
+    {% include glyph.html file="steamdeck_button_r1" alt="right bumper" %},
+    {% include glyph.html file="steamdeck_button_r2" alt="right trigger" %} and
     {% include glyph.html file="switch_buttons" alt="XYAB face buttons" %}.
     Because this is way more skills than buttons, two chord buttons (modifier buttons, acting only when held) are
     needed:
@@ -286,55 +289,103 @@ mv TouchMenuIcons/* $_</code></pre>
         <li>Hold {% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %} to access profession
             skills - on top left of a skill bar</li>
         <li>Hold {% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %} to access slot
-            skills
-            - on the right side of a skill bar</li>
+            skills - on the right side of a skill bar</li>
     </ul>
-    <table>
-        <thead>
-            <tr>
-                <th></th>
-                <th>no back button held</th>
-                <th>{% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %}</th>
-                <th>{% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %}</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{% include glyph.html file="steamdeck_button_r2" alt="right trigger" %}</td>
-                <td>Weapon Skill 1 <kbd>1</kbd></td>
-                <td>Healing Skill <kbd>6</kbd></td>
-                <td>Profession Skill 1 <kbd>F1</kbd></td>
-            </tr>
-            <tr>
-                <td>{% include glyph.html file="steamdeck_button_x" alt="X" %}</td>
-                <td>Weapon Skill 2 <kbd>2</kbd></td>
-                <td>Utility Skill 1 <kbd>7</kbd></td>
-                <td>Profession Skill 2 <kbd>F2</kbd></td>
-            </tr>
-            <tr>
-                <td>{% include glyph.html file="steamdeck_button_a" alt="A" %}</td>
-                <td>Weapon Skill 3 <kbd>3</kbd></td>
-                <td>Utility Skill 2 <kbd>8</kbd></td>
-                <td>Profession Skill 3 <kbd>F3</kbd></td>
-            </tr>
-            <tr>
-                <td>{% include glyph.html file="steamdeck_button_b" alt="B" %}</td>
-                <td>Weapon Skill 4 <kbd>4</kbd></td>
-                <td>Utility Skill 3 <kbd>9</kbd></td>
-                <td>Profession Skill 4 <kbd>F4</kbd></td>
-            </tr>
-            <tr>
-                <td>{% include glyph.html file="steamdeck_button_y" alt="Y" %}</td>
-                <td>Weapon Skill 5 <kbd>5</kbd></td>
-                <td>Elite Skill <kbd>0</kbd></td>
-                <td>Profession Skill 5 <kbd>F5</kbd></td>
-            </tr>
-        </tbody>
-    </table>
+    <figure>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>no back button held</th>
+                    <th>{% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %} held</th>
+                    <th>{% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %} held</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{% include glyph.html file="steamdeck_button_r2" alt="right trigger" %}</td>
+                    <td>Weapon Skill 1 <kbd>1</kbd></td>
+                    <td>Profession Skill 1 <kbd>F1</kbd></td>
+                    <td>Healing Skill <kbd>6</kbd></td>
+                </tr>
+                <tr>
+                    <td>{% include glyph.html file="steamdeck_button_x" alt="X" %}</td>
+                    <td>Weapon Skill 2 <kbd>2</kbd></td>
+                    <td>Profession Skill 2 <kbd>F2</kbd></td>
+                    <td>Utility Skill 1 <kbd>7</kbd></td>
+                </tr>
+                <tr>
+                    <td>{% include glyph.html file="steamdeck_button_a" alt="A" %}</td>
+                    <td>Weapon Skill 3 <kbd>3</kbd></td>
+                    <td>Profession Skill 3 <kbd>F3</kbd></td>
+                    <td>Utility Skill 2 <kbd>8</kbd></td>
+                </tr>
+                <tr>
+                    <td>{% include glyph.html file="steamdeck_button_b" alt="B" %}</td>
+                    <td>Weapon Skill 4 <kbd>4</kbd></td>
+                    <td>Profession Skill 4 <kbd>F4</kbd></td>
+                    <td>Utility Skill 3 <kbd>9</kbd></td>
+                </tr>
+                <tr>
+                    <td>{% include glyph.html file="steamdeck_button_y" alt="Y" %}</td>
+                    <td>Weapon Skill 5 <kbd>5</kbd></td>
+                    <td>Profession Skill 5 <kbd>F5</kbd></td>
+                    <td>Elite Skill <kbd>0</kbd></td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+    <ul>
+        <li>{% include glyph.html file="steamdeck_button_r1" alt="right bumper" %} is Weapon Swap <kbd>`</kbd>.
 
+        <li>Special Action key <kbd>N</kbd> is invoked when both top back grip buttons acting as skillset modifiers are
+            pressed at the same time. You can press one after the other, or both at once, this does not really matter.
+        <li>[Customization option]: With button ordering I tried to follow observed by me trend, to have more frequently
+            used skills on left side of any set of skills. Thus {% include glyph.html file="steamdeck_button_r2"
+            alt="right
+            trigger" %}
+            (most mashed button) becomes auto attack <kbd>1</kbd>, self heal <kbd>6</kbd> or skill <kbd>F1</kbd> (most
+            spammed skills);
+            next three easily reachable buttons (roughly lying ordered in an arc)
+            {% include glyph.html file="steamdeck_button_x" alt="X" %}
+            {% include glyph.html file="steamdeck_button_a" alt="A" %}
+            {% include glyph.html file="steamdeck_button_b" alt="B" %},
+            following ordering on a skill bar become weapon skills <kbd>2</kbd><kbd>3</kbd><kbd>4</kbd>,
+            utility skills <kbd>7</kbd><kbd>8</kbd><kbd>9</kbd> or profession skills
+            <kbd>F2</kbd><kbd>F3</kbd><kbd>F4</kbd>;
+            finally the furthest button {% include glyph.html file="steamdeck_button_y" alt="Y" %},
+            becomes the least spammy, the most impactful weapon skill <kbd>5</kbd>, elite skill <kbd>0</kbd> or
+            profession
+            skill <kbd>F5</kbd>
+        </li>
+    </ul>
     <h2 id="interface">
         Interface
     </h2>
+    Right trackpad is a mouse, plain and simple - click is left mouse button, double click, drag and drop - all
+    works as
+    you
+    would expect it to.
+    - To right click (eg on salvage kit to salvage all, bag to consume all or player in party/squad to join their
+    map)
+    simply hover over target with cursor using the trackpad, then gently tap the top part of right joystick.
+    - Mouse in game serves few additional purposes: zooming in and out, scrolling through panels, splitting stacks,
+    linking
+    items in chat and changing which skill activates automatically - more on all of these in later section.
+
+    Left trackpad is designated as a virtual menu for frequently used panels: **inventory** <kbd>I</kbd>,
+    **friends**
+    <kbd>Y</kbd>, **guild** <kbd>G</kbd> etc. These are all also accessible through icons in top left corner of
+    screen.
+    - [Customization option]: The three most commonly used by me shortcuts are all in central horizontal line:
+    **hero
+    panel**, **inventory panel** and **wizard's vault** - you are free to reorder them as you like though. It's also
+    possible to add new entries, which I felt needed no shortcut eg **Pet Dialog** <kbd>K</kbd> or **Party Dialog**
+    <kbd>P</kbd>.
+    - [Customization option][Advanced Feature]: You are additionally able to create shortcuts for **Mail Dialog**
+    <kbd>[</kbd>and **PvP Panel** <kbd>]</kbd>. Game's original icons for these are also available for manual
+    assignment.
+
     <h2 id="shortcuts">
         Shortcuts
     </h2>
