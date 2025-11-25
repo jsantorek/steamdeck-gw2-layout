@@ -218,11 +218,11 @@ mv TouchMenuIcons/* $_</code></pre>
     <h2 id="movement">
         Movement and Camera
     </h2>
-    <p>Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should
-        expect {% include glyph.html file="steamdeck_stick_l" alt="left one" %},
-        to move character around and
-        {% include glyph.html file="steamdeck_stick_r" alt="right one" %},
-        to operate camera - which is exactly what happens.
+    Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should
+    expect {% include glyph.html file="steamdeck_stick_l" alt="left one" %},
+    to move character around and
+    {% include glyph.html file="steamdeck_stick_r" alt="right one" %},
+    to operate camera - which is exactly what happens.
     <ul>
         <li>This behaviour in most popular layouts is achieved relying on action camera, which forces user to set
             additional key binding manually. The toggle will also not be preserved between play sessions and for some
@@ -274,6 +274,64 @@ mv TouchMenuIcons/* $_</code></pre>
 
     <h2 id="combat">
         Combat</h2>
+    The other theme is "right side is for skills", thus all weapon skills, slot skills and profession skills are
+    accessible
+    with: right bumper,
+    {% include glyph.html file="steamdeck_button_r1" alt="left bumper" %},
+    {% include glyph.html file="steamdeck_button_r2" alt="left trigger" %} and
+    {% include glyph.html file="switch_buttons" alt="XYAB face buttons" %}.
+    Because this is way more skills than buttons, two chord buttons (modifier buttons, acting only when held) are
+    needed:
+    <ul>
+        <li>Hold {% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %} to access profession
+            skills - on top left of a skill bar</li>
+        <li>Hold {% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %} to access slot
+            skills
+            - on the right side of a skill bar</li>
+    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>no back button held</th>
+                <th>{% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %}</th>
+                <th>{% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{% include glyph.html file="steamdeck_button_r2" alt="right trigger" %}</td>
+                <td>Weapon Skill 1 <kbd>1</kbd></td>
+                <td>Healing Skill <kbd>6</kbd></td>
+                <td>Profession Skill 1 <kbd>F1</kbd></td>
+            </tr>
+            <tr>
+                <td>{% include glyph.html file="steamdeck_button_x" alt="X" %}</td>
+                <td>Weapon Skill 2 <kbd>2</kbd></td>
+                <td>Utility Skill 1 <kbd>7</kbd></td>
+                <td>Profession Skill 2 <kbd>F2</kbd></td>
+            </tr>
+            <tr>
+                <td>{% include glyph.html file="steamdeck_button_a" alt="A" %}</td>
+                <td>Weapon Skill 3 <kbd>3</kbd></td>
+                <td>Utility Skill 2 <kbd>8</kbd></td>
+                <td>Profession Skill 3 <kbd>F3</kbd></td>
+            </tr>
+            <tr>
+                <td>{% include glyph.html file="steamdeck_button_b" alt="B" %}</td>
+                <td>Weapon Skill 4 <kbd>4</kbd></td>
+                <td>Utility Skill 3 <kbd>9</kbd></td>
+                <td>Profession Skill 4 <kbd>F4</kbd></td>
+            </tr>
+            <tr>
+                <td>{% include glyph.html file="steamdeck_button_y" alt="Y" %}</td>
+                <td>Weapon Skill 5 <kbd>5</kbd></td>
+                <td>Elite Skill <kbd>0</kbd></td>
+                <td>Profession Skill 5 <kbd>F5</kbd></td>
+            </tr>
+        </tbody>
+    </table>
+
     <h2 id="interface">
         Interface
     </h2>
