@@ -218,87 +218,97 @@ mv TouchMenuIcons/* $_</code></pre>
     <h2 id="movement">
         Movement and Camera
     </h2>
-    Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should
-    expect {% include glyph.html file="steamdeck_stick_l" alt="left one" %},
-    to move character around and
-    {% include glyph.html file="steamdeck_stick_r" alt="right one" %},
-    to operate camera - which is exactly what happens.
+    <p>Joysticks are the most self-explanatory and intuitive controls. When starting a new game on a modern system, the
+        player should expect {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %} to move the character
+        and {% include glyph.html file="steamdeck_stick_r" alt="right joystick" %} to operate the camera - which is
+        exactly what happens.
+    </p>
     <ul>
-        <li>This behaviour in most popular layouts is achieved relying on action camera, which forces user to set
-            additional key binding manually. The toggle will also not be preserved between play sessions and for some
-            cases user needs
-            to remember toggling it on and off between UI navigation and regular gameplay. My attempt instead replicates
-            my own PC
-            experience: having {% include glyph.html file="mouse_right_outline" alt="right mouse button" %},
-            clicked most of the time as I run around.</li>
+        <li>In most popular layouts this behavior is achieved by relying on the action camera, which forces the user to
+            set an additional keybinding manually. The toggle is also not preserved between play sessions, and in some
+            cases the user must remember to switch it depending on whether they are navigating the UI or playing
+            normally. My attempt instead replicates typical PC gameplay: having the
+            {% include glyph.html file="mouse_right_outline" alt="right mouse button" %}
+            pressed most of the time while moving.
+        </li>
         <li>Using <kbd>&uarr;</kbd><kbd>&darr;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd> instead of
             <kbd>W</kbd><kbd>S</kbd><kbd>A</kbd><kbd>D</kbd> makes it possible to use
-            {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %},
-            for Character Selection screen navigation or corrections in text or numeric fields.
+            {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %}
+            for Character Selection screen navigation or for making corrections in text or numeric fields.
         </li>
-        <li>Autorun <kbd>R</kbd> is available with short hard
-            {% include glyph.html file="steamdeck_stick_side_l" alt="left joystick press" %}.</li>
-        <li>[Advanced Feature]: Walk toggle is available with long hard
-            {% include glyph.html file="steamdeck_stick_side_l" alt="left joystick press" %}.</li>
-        <li>[Advanced Feature]: Action camera toggle is available with a hard
-            {% include glyph.html file="steamdeck_stick_side_r" alt="right joystick press" %}.</li>
-        <li>Please notice a pattern that all camera related actions (move camera, toggle action camera) are on
-            {% include glyph.html file="steamdeck_stick_r" alt="right joystick" %},
-            while all movement related actions (move, autorun, walk) are on
-            {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %}.</li>
-        <li>Learn to place your right thumb on top of
-            {% include glyph.html file="steamdeck_stick_r" alt="joystick" %}
-            for the device to correctly register that it is being touched.</li>
-        <li>Sometimes if you leave mouse cursor over HUD element (map, skill bar, inventory panel etc), camera movement
-            might not work until you move it away.</li>
-        <li>[Customization option]: I've set analog sensitivity along X and Y axes to what I personally feel reflects
-            best my area of interest when looking around, but feel free to adjust that according to your preferences.
+        <li>Autorun <kbd>R</kbd> is available with a short hard press of
+            {% include glyph.html file="steamdeck_stick_side_l" alt="left joystick press" %}.
+        </li>
+        <li>[Advanced Feature]: Walk toggle is available with a long hard press of
+            {% include glyph.html file="steamdeck_stick_side_l" alt="left joystick press" %}.
+        </li>
+        <li>[Advanced Feature]: Action camera toggle is available with a hard press of
+            {% include glyph.html file="steamdeck_stick_side_r" alt="right joystick press" %}.
+        </li>
+        <li>Notice the pattern: all camera-related actions (move camera, toggle action camera) are on the
+            {% include glyph.html file="steamdeck_stick_r" alt="right joystick" %}, while all movement-related actions
+            (move, autorun, walk) are on the
+            {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %}.
+        </li>
+        <li>Learn to keep your right thumb lightly resting on
+            {% include glyph.html file="steamdeck_stick_r" alt="right joystick" %} so the device correctly detects
+            touch.
+        </li>
+
+        <li>If you leave the mouse cursor hovering over a HUD element (map, skill bar, inventory etc.), camera movement
+            might not work until you move the cursor away.
+        </li>
+        <li>[Customization option]: I've set analog sensitivity along both axes to match my preferred look-around range,
+            but feel free to adjust this according to your preference.
         </li>
     </ul>
-    Keeping the "left side/hand is for movement" theme, dodge <kbd>V</kbd> is bound to
-    {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %} and jump
-    <kbd>Space</kbd> is bound to {% include glyph.html file="steamdeck_button_l1" alt="left bumper" %}.
-    To improve mount usability, Mount Skill 2 <kbd>C</kbd> can be called with
-    {% include glyph.html file="steamdeck_button_r1" alt="right bumper" %}. ou will be moving
-    and looking with analogs while mount skills will all be available through bumpers (jump, fly up, skill 2)
-    and triggers (engage skill, skill 1).
+    <p>Keeping the theme "left side/hand is for movement," dodge <kbd>V</kbd> is bound to
+        {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %}, and jump <kbd>Space</kbd> is bound to
+        {% include glyph.html file="steamdeck_button_l1" alt="left bumper" %}.
+        To improve mount usability, Mount Skill 2 <kbd>C</kbd> is triggered with
+        {% include glyph.html file="steamdeck_button_r1" alt="right bumper" %}.
+        You will be moving and looking with the analog sticks while mount skills are available through bumpers (jump,
+        fly up, skill 2) and triggers (engage skill, skill 1).
+    </p>
     <ul>
-        <li>[Customization option]: In past I have been experimenting with
+        <li>[Customization option]: In the past I experimented with
             {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %}
-            having two modes of activation: half-press for plain dodge and full-press for dodge jump <kbd>V+Space</kbd>.
-            This setup works
-            very well for numerous areas, but unfortunately makes some mounts, noticeably Griffon and Raptor, much more
-            challenging to use.
-            In the end I've decided to remove it (since you can still just press
+            having two activation modes: half-press for plain dodge and full-press for a dodge jump <kbd>V+Space</kbd>.
+            While this setup works well in many areas, it unfortunately makes some mounts - notably the Griffon and
+            Raptor -
+            much harder to use. I ultimately removed it (you can still press
             {% include glyph.html file="steamdeck_button_l1" alt="left bumper" %} and
             {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %}
-            at the same time for dodge jump), but feel free
-            to experiment on your own - especially if you do not use these mounts or play primarily WvW or PvP.</li>
+            at the same time for a dodge jump), but feel free to experiment, especially if you rarely use those mounts
+            or primarily play WvW or PvP.
+        </li>
     </ul>
 
     <h2 id="combat">
         Combat</h2>
-    The other theme is "right side is for skills", thus all weapon skills, slot skills and profession skills are
-    accessible with:
-    {% include glyph.html file="steamdeck_button_r1" alt="right bumper" %},
-    {% include glyph.html file="steamdeck_button_r2" alt="right trigger" %} and
-    {% include glyph.html file="switch_buttons" alt="XYAB face buttons" %}.
-    Because this is way more skills than buttons, two chord buttons (modifier buttons, acting only when held) are
-    needed:
+    <p>The second theme is "the right side is for skills." All weapon skills, slot skills, and profession skills are
+        accessible via: {% include glyph.html file="steamdeck_button_r1" alt="right bumper" %},
+        {% include glyph.html file="steamdeck_button_r2" alt="right trigger" %},
+        and {% include glyph.html file="switch_buttons" alt="XYAB face buttons" %}.
+        Since there are more skills than buttons, two chord (modifier) buttons are needed:
+    </p>
+
     <ul>
         <li>Hold {% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %} to access profession
-            skills - on top left of a skill bar</li>
+            skills (top left of the skill bar).
+        </li>
         <li>Hold {% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %} to access slot
-            skills - on the right side of a skill bar</li>
+            skills (right side of the skill bar).
+        </li>
     </ul>
     <figure>
         <table>
             <thead>
                 <tr>
                     <th></th>
-                    <th>no back button held</th>
-                    <th>{% include glyph.html file="steamdeck_button_l4" alt="back top left button L4" %} held</th>
-                    <th>{% include glyph.html file="steamdeck_button_r4" alt="back top right button R4" %} held</th>
+                    <th>No back button held</th>
+                    <th>{% include glyph.html file="steamdeck_button_l4" alt="L4" %} held</th>
+                    <th>{% include glyph.html file="steamdeck_button_r4" alt="R4" %} held</th>
                 </tr>
             </thead>
             <tbody>
@@ -337,26 +347,24 @@ mv TouchMenuIcons/* $_</code></pre>
     </figure>
     <ul>
         <li>{% include glyph.html file="steamdeck_button_r1" alt="right bumper" %} is Weapon Swap <kbd>`</kbd>.
+        </li>
 
-        <li>Special Action key <kbd>N</kbd> is invoked when both top back grip buttons acting as skillset modifiers are
-            pressed at the same time. You can press one after the other, or both at once, this does not really matter.
-        <li>[Customization option]: With button ordering I tried to follow observed by me trend, to have more frequently
-            used skills on left side of any set of skills. Thus {% include glyph.html file="steamdeck_button_r2"
-            alt="right
-            trigger" %}
-            (most mashed button) becomes auto attack <kbd>1</kbd>, self heal <kbd>6</kbd> or skill <kbd>F1</kbd> (most
-            spammed skills);
-            next three easily reachable buttons (roughly lying ordered in an arc)
-            {% include glyph.html file="steamdeck_button_x" alt="X" %}
-            {% include glyph.html file="steamdeck_button_a" alt="A" %}
-            {% include glyph.html file="steamdeck_button_b" alt="B" %},
-            following ordering on a skill bar become weapon skills <kbd>2</kbd><kbd>3</kbd><kbd>4</kbd>,
-            utility skills <kbd>7</kbd><kbd>8</kbd><kbd>9</kbd> or profession skills
-            <kbd>F2</kbd><kbd>F3</kbd><kbd>F4</kbd>;
-            finally the furthest button {% include glyph.html file="steamdeck_button_y" alt="Y" %},
-            becomes the least spammy, the most impactful weapon skill <kbd>5</kbd>, elite skill <kbd>0</kbd> or
-            profession
-            skill <kbd>F5</kbd>
+        <li>
+            Special Action <kbd>N</kbd> is triggered when both top back grip buttons (the chord buttons) are pressed
+            simultaneously. You may press them one after the other or at the same time.
+        </li>
+        <li>
+            [Customization option]: Button ordering follows the general trend of placing frequently used skills on the
+            left side of any skill group. Thus {% include glyph.html file="steamdeck_button_r2" alt="right trigger" %}
+            - the most frequently pressed button - becomes auto-attack <kbd>1</kbd>, self-heal <kbd>6</kbd>, or
+            <kbd>F1</kbd>. The next three easily reachable buttons -
+            {% include glyph.html file="steamdeck_button_x" alt="X" %},
+            {% include glyph.html file="steamdeck_button_a" alt="A" %},
+            {% include glyph.html file="steamdeck_button_b" alt="B" %} -
+            map to skills <kbd>2</kbd><kbd>3</kbd><kbd>4</kbd>,
+            <kbd>7</kbd><kbd>8</kbd><kbd>9</kbd>, or <kbd>F2</kbd><kbd>F3</kbd><kbd>F4</kbd>.
+            Finally, the furthest button {% include glyph.html file="steamdeck_button_y" alt="Y" %}
+            becomes the least-spammed, most impactful skill: <kbd>5</kbd>, <kbd>0</kbd>, or <kbd>F5</kbd>.
         </li>
     </ul>
     <h2 id="interface">
