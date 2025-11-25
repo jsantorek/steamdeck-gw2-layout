@@ -219,9 +219,59 @@ mv TouchMenuIcons/* $_</code></pre>
         Movement and Camera
     </h2>
     <p>Joysticks are most self-explanatory and intuitive. When starting a new game on a modern system, player should
-        expect
-        left one to move character around and right one to operate camera - which is exactly what happens. First theme
-        of the layout is <i>Movement is on the left</i></p>
+        expect {% include glyph.html file="steamdeck_stick_l" alt="left one" %},
+        to move character around and
+        {% include glyph.html file="steamdeck_stick_r" alt="right one" %},
+        to operate camera - which is exactly what happens.
+    <ul>
+        <li>This behaviour in most popular layouts is achieved relying on action camera, which forces user to set
+            additional key binding manually. The toggle will also not be preserved between play sessions and for some
+            cases user needs
+            to remember toggling it on and off between UI navigation and regular gameplay. My attempt instead replicates
+            my own PC
+            experience: having {% include glyph.html file="mouse_right_outline" alt="right mouse button" %},
+            clicked most of the time as I run around.</li>
+        <li>Using <kbd>&uarr;</kbd><kbd>&darr;</kbd><kbd>&larr;</kbd><kbd>&rarr;</kbd> instead of
+            <kbd>W</kbd><kbd>S</kbd><kbd>A</kbd><kbd>D</kbd> makes it possible to use
+            {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %},
+            for Character Selection screen navigation or corrections in text or numeric fields.
+        </li>
+        <li>Autorun <kbd>R</kbd> is available with short hard
+            {% include glyph.html file="steamdeck_stick_side_l" alt="left joystick press" %}.</li>
+        <li>[Advanced Feature]: Walk toggle is available with long hard
+            {% include glyph.html file="steamdeck_stick_side_l" alt="left joystick press" %}.</li>
+        <li>[Advanced Feature]: Action camera toggle is available with a hard
+            {% include glyph.html file="steamdeck_stick_side_r" alt="right joystick press" %}.</li>
+        <li>Please notice a pattern that all camera related actions (move camera, toggle action camera) are on
+            {% include glyph.html file="steamdeck_stick_r" alt="right joystick" %},
+            while all movement related actions (move, autorun, walk) are on
+            {% include glyph.html file="steamdeck_stick_l" alt="left joystick" %}.</li>
+        <li>Learn to place your right thumb on top of
+            {% include glyph.html file="steamdeck_stick_r" alt="joystick" %}
+            for the device to correctly register that it is being touched.</li>
+        <li>Sometimes if you leave mouse cursor over HUD element (map, skill bar, inventory panel etc), camera movement
+            might not work until you move it away.</li>
+        <li>[Customization option]: I've set analog sensitivity along X and Y axes to what I personally feel reflects
+            best my area of interest when looking around, but feel free to adjust that according to your preferences.
+        </li>
+    </ul>
+    <p>Keeping the "left side/hand is for movement" theme, dodge <kbd>V</kbd> is bound to left trigger and jump
+        <kbd>Space</kbd> is bound to left bumper.
+    </p>
+    <ul>
+        <li>[Customization option]: In past I have been experimenting with
+            {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %}
+            having two modes of activation: half-press for plain dodge and full-press for dodge jump <kbd>V+Space</kbd>.
+            This setup works
+            very well for numerous areas, but unfortunately makes some mounts, noticeably Griffon and Raptor, much more
+            challenging to use.
+            In the end I've decided to remove it (since you can still just press
+            {% include glyph.html file="steamdeck_button_l1" alt="left bumper" %} and
+            {% include glyph.html file="steamdeck_button_l2" alt="left trigger" %}
+            at the same time for dodge jump), but feel free
+            to experiment on your own - especially if you do not use these mounts or play primarily WvW or PvP.</li>
+    </ul>
+
     <h2 id="combat">
         Combat</h2>
     <h2 id="interface">
